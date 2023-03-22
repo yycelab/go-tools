@@ -8,8 +8,8 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/yycelab/go-tools/errors"
 	"gorm.io/gorm"
-	"yycelab.com/go-tools/errors"
 )
 
 var (
