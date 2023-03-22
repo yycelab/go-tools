@@ -1,0 +1,35 @@
+db:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  pwd: sa
+config:
+  namestragery: 1  
+  intersuffix: Dao
+  stsuffix: Do
+  #可选 如果mappingvo不设置,使用该包
+  # modeldest: dao.model
+  #可选 如果interface不设置,使用该包 
+  # pkg: dao
+interfaces:
+  dao.user:
+    table: 
+      name: elab_user
+      model: User
+      columns:
+        - column: id
+          field: Id
+        - column: name
+          field: Name 
+    customst:
+      - name: filter
+        fileds: 
+          - name: string
+          - start_dt: time.Time
+    mehtods:
+      - method: Insert
+        sql: select * from elab_user
+
+
+
+
