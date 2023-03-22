@@ -8,7 +8,7 @@ import (
 	"io"
 	"net/http"
 
-	"yycelab.com/go-tools/errors"
+	"github.com/yycelab/go-tools/errors"
 )
 
 func AssertParamError(err error, msg string, args ...any) {
